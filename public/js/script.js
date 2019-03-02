@@ -54,7 +54,7 @@ function commentFormSubmitCallback(e) {
 }
 
 function formatTimestamp(timestamp) {
-	return moment(timestamp).fromNow();
+	return moment.utc(timestamp).fromNow();
 }
 
 function ajax(url, data, callback) {
@@ -65,7 +65,7 @@ function ajax(url, data, callback) {
 		if (xhr.readyState == 4 && xhr.status == 200) {
 			if (callback) {
 				callback(xhr.responseText);
-			}					
+			}
 		}
 	}
 	xhr.send(data);

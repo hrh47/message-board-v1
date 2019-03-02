@@ -8,7 +8,7 @@
 <body>
 	<div class="container">
 		<?php require('partials/post_form.php'); ?>
-		
+
 		<h1 id="post-count"><?= count($posts) . ' 則留言' ?></h1>
 		<div id="post-list">
 			<?php foreach ($posts as $post) : ?>

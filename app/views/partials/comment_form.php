@@ -5,6 +5,6 @@
 		<textarea name="comment" placeholder="回應" required></textarea>
 		<div class="button-wrapper">
 			<button class="form-button" type="submit">發佈送出</button>
-		</div>						
+		</div>
 	</form>
 </div>
